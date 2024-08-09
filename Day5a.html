@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        color: transparent;
+        background-image: linear-gradient(160deg,red,blue,green);
+        -webkit-background-clip: text;
+        font-size: 40px;
+        text-align: center;
+        scale: 0.5;
+        transition: 3s;
+    }
+    h1:hover{
+        scale: 1;
+    }
+    #boo{
+        width: 300px;
+        height: 200px;
+        background-color: black;
+        animation-name: myboo;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes myboo {
+        from{
+            background-color: greenyellow;
+            width: 10px;
+            height: 10px;
+            text-align: center;
+        }
+        to{
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            border-radius: 120px;
+            text-align: center;
+        }
+    }
+    h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        letter-spacing: 2px;
+        font-size: 40px;
+        color: transparent;
+        background-image: linear-gradient(red,blue,green);
+        -webkit-background-clip:text;
+        text-align: center;
+        scale: 0.6;
+        transition: 3s;
+    }
+    h2:hover{
+         scale: 1;
+    }
+    #bro{
+        width: 300px;
+        height: 200px;
+        background-color: rgb(174, 156, 112);
+        animation-name:sis;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes sis{
+        from{
+            background-color: rgb(174, 156, 112);
+            width: 10px;
+            height: 10px;
+            text-align: center;
+        }
+        to{
+            background-color: yellow;
+            width: 200px;
+            height: 50px;
+            border-radius: 120px;
+            text-align: center;
+        }
+    }
+    body{
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<body>
+    <div id="boo">
+       
+        <h1>
+            Welcome to
+        </h1>  
+      <div id="bro">
+        <h2>
+            Flipkart
+        </h2>
+      </div>
+    </div>
+</body>
+</html>
